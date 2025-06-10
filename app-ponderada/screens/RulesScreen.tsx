@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function RulesScreen() {
   const { colors } = useTheme();
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>

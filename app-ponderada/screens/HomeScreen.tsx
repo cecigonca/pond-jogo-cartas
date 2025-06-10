@@ -66,6 +66,19 @@ export default function HomeScreen() {
         >
           Ver Regras
         </Button>
+        <Button
+          mode="outlined"
+          onPress={() => navigation.navigate('Results')}
+          style={{
+            width: 200,
+            height: 48,
+            borderColor: colors.primary,
+            justifyContent: 'center',
+          }}
+          labelStyle={{ color: colors.primary, fontWeight: 'bold' }}
+        >
+          Resultados
+        </Button>
       </View>
     </SafeAreaView>
   );

@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './screens/HomeScreen';
 import RulesScreen from './screens/RulesScreen';
+import ResultScreen from './screens/ResultScreen'; // Importando a tela de resultados
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,7 @@ export default function App() {
         <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Rules" component={RulesScreen} />
+          <Stack.Screen name="Results" component={ResultScreen} />
           {/* Aqui você pode adicionar outras telas do jogo */}
         </Stack.Navigator>
       </NavigationContainer>
