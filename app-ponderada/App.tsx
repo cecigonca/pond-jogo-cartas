@@ -1,20 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import HomeScreen from './screens/HomeScreen';
+import RulesScreen from './screens/RulesScreen';
+
+const Stack = createNativeStackNavigator();
+
+// 🎨 Tema com laranja amarelado como primário e verde petróleo como secundário
+const customTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#F29C3B',       // Laranja amarelado
+    onPrimary: '#FFFFFF',     // Texto sobre o botão laranja
+    secondary: '#2F7C78',     // Verde petróleo
+    background: '#F2F2F2',    // Fundo geral
+    surface: '#FFFFFF',       // Cards, inputs
+    onSurface: '#2F3A3D',     // Texto sobre superfícies
+    text: '#2F3A3D',          // Texto padrão
+    error: '#D32F2F',         // Erros
+  },
+};
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={customTheme}>
+      <NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Rules" component={RulesScreen} />
+          {/* Aqui você pode adicionar outras telas do jogo */}
+        </Stack.Navigator>
+      </NavigationContainer>
+    </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
