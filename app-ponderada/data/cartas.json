@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "nome": "Carta Vermelha",
+    "cor": "vermelha",
+    "valor": 1,
+    "efeito": "bonus_fixa",
+    "descricao": "+1 ponto"
+  },
+  {
+    "id": 2,
+    "nome": "Carta Azul",
+    "cor": "azul",
+    "valor": 1,
+    "efeito": "bonus_fixa",
+    "descricao": "+1 ponto"
+  },
+  {
+    "id": 3,
+    "nome": "Carta Verde",
+    "cor": "verde",
+    "valor": 1,
+    "efeito": "bonus_fixa",
+    "descricao": "+1 ponto"
+  },
+  {
+    "id": 4,
+    "nome": "Carta Amarela",
+    "cor": "amarela",
+    "valor": 1,
+    "efeito": "bonus_fixa",
+    "descricao": "+1 ponto"
+  },
+  {
+    "id": 5,
+    "nome": "Carta Especial",
+    "valor": 0,
+    "efeito": "multiplica_total",
+    "descricao": "Multiplica a pontuação final por 2"
+  },
+  {
+    "id": 6,
+    "nome": "Carta Bônus de Cores",
+    "valor": 0,
+    "efeito": "bonus_trio_cor",
+    "descricao": "+3 pontos se tiver 3 cartas da mesma cor"
+  },
+  {
+    "id": 7,
+    "nome": "Carta Azar",
+    "valor": -2,
+    "efeito": "bonus_negativo",
+    "descricao": "-2 pontos"
+  },
+  {
+    "id": 8,
+    "nome": "Carta Sorte",
+    "valor": 2,
+    "efeito": "bonus_fixa",
+    "descricao": "+2 pontos"
+  },
+  {
+    "id": 9,
+    "nome": "Carta Nula",
+    "valor": 0,
+    "efeito": "nenhum",
+    "descricao": "Não vale nada"
+  }
+]

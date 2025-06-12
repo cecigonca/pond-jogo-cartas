@@ -24,50 +24,54 @@ export default function RulesScreen() {
             fontWeight: 'bold',
           }}
         >
-        Regras do Jogo
+          Regras do Jogo
         </Text>
 
         <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
           🎯 Objetivo
         </Text>
         <Text style={{ marginBottom: 16 }}>
-          O objetivo é construir a melhor mão possível ao longo de 10 rodadas, escolhendo cartas estratégicas que gerem a maior pontuação final.
+          Construir a melhor mão possível em 10 rodadas, escolhendo cartas que maximizem sua pontuação final.
         </Text>
 
         <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
           🕹️ Como Jogar
         </Text>
         <Text style={{ marginBottom: 16 }}>
-          - Você terá 10 rodadas no total.{"\n"}
-          - A cada rodada, três cartas são exibidas.{"\n"}
-          - Você deve escolher apenas uma delas para adicionar à sua mão.{"\n"}
-          - Algumas cartas possuem modificadores que afetam a pontuação.
+          • O jogo tem 10 rodadas.{"\n"}
+          • Em cada rodada, 3 cartas diferentes aparecem na tela.{"\n"}
+          • Você deve virar e escolher apenas 1 carta por rodada.{"\n"}
+          • As cartas escolhidas vão para a sua mão e afetam sua pontuação.
         </Text>
 
         <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          ✨ Modificadores
+          ✨ Tipos de Efeitos nas Cartas
         </Text>
         <Text style={{ marginBottom: 16 }}>
-          Modificadores são efeitos especiais que aumentam sua pontuação.{"\n"}
-          Exemplos:{"\n"}
-          • 3 cartas da mesma cor = +5 pontos{"\n"}
-          • 2 cartas com ícones especiais = x2 na pontuação{"\n"}
-          • 4 cartas diferentes = +7 pontos
+          As cartas podem ter efeitos diferentes que influenciam o jogo:
+          {"\n\n"}• <Text style={{ fontWeight: 'bold' }}>Pontos positivos:</Text> somam direto à pontuação final.
+          {"\n"}• <Text style={{ fontWeight: 'bold' }}>Pontos negativos:</Text> subtraem da pontuação.
+          {"\n"}• <Text style={{ fontWeight: 'bold' }}>x2 total:</Text> dobra o total ao final.
+          {"\n"}• <Text style={{ fontWeight: 'bold' }}>Bônus por trio de cor:</Text> se você tiver 3 ou mais cartas da mesma cor, recebe +3 pontos extras.
         </Text>
 
         <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🧮 Pontuação
+          🧮 Cálculo da Pontuação
         </Text>
         <Text style={{ marginBottom: 16 }}>
-          Cada carta possui um valor base (ex: 1 a 5 pontos).{"\n"}
-          A pontuação final é a soma dos valores das cartas + bônus dos modificadores ativos.
+          A pontuação é calculada somando:
+          {"\n"}• Os pontos das cartas escolhidas (positivos ou negativos).
+          {"\n"}• Os bônus por efeitos ativos (ex: trio de cor).{"\n"}
+          • Multiplicadores aplicados no final (ex: x2).
         </Text>
 
         <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🏁 Fim de Jogo
+          🏁 Fim de Jogo e Ranking
         </Text>
         <Text style={{ marginBottom: 32 }}>
-          Ao final da 10ª rodada, sua mão é avaliada e sua pontuação final é exibida na tela de resultados.
+          Após a 10ª rodada, sua pontuação final será exibida.{"\n"}
+          Se estiver entre os 5 melhores, você entra no ranking com seu nome e posição.{"\n"}
+          Você pode visualizar o ranking a qualquer momento na tela inicial.
         </Text>
 
         <Button
