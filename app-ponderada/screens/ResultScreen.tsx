@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ScrollView, SafeAreaView } from 'react-native';
-import { Text, Button, useTheme, Card } from 'react-native-paper';
+import { Button, Text, useTheme, Card } from 'react-native-paper';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -14,7 +14,7 @@ export default function ResultScreen() {
 
   const [posicaoRanking, setPosicaoRanking] = useState<number | null>(null);
 
-  // ======= Cálculo da pontuação =======
+  // cálculo da pontuação
   let total = 0;
   let multiplicadores = 1;
 
@@ -59,7 +59,7 @@ export default function ResultScreen() {
 
   const pontuacaoFinal = total * multiplicadores;
 
-  // ======= Salvamento e cálculo da colocação =======
+  // cálculo da colocação
   useEffect(() => {
     const salvarPontuacao = async () => {
       const novoScore = {
@@ -93,7 +93,6 @@ export default function ResultScreen() {
 
     salvarPontuacao();
   }, []);
-  // ============================================
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>

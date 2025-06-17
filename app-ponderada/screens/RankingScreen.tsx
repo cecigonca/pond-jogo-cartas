@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { View, SafeAreaView, ScrollView } from 'react-native';
-import { Text, useTheme, Button, Card } from 'react-native-paper';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useState, useEffect } from 'react';
+import { View, ScrollView, SafeAreaView } from 'react-native';
+import { Button, Text, useTheme, Card } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function RankingScreen() {
   const [ranking, setRanking] = useState<any[]>([]);

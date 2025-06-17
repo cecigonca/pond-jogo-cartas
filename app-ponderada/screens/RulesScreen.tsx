@@ -1,6 +1,6 @@
 import React from 'react';
-import { ScrollView, View, SafeAreaView } from 'react-native';
-import { Text, useTheme, Button } from 'react-native-paper';
+import { View, SafeAreaView, ScrollView } from 'react-native';
+import { Button, Text, useTheme } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 
 export default function RulesScreen() {

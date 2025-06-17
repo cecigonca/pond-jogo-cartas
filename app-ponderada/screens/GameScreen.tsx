@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import {
-  View,
-  Image,
-  TouchableOpacity,
-  StyleSheet,
-  SafeAreaView,
-  Dimensions,
-} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Image, SafeAreaView, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
 import { Text, useTheme } from 'react-native-paper';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import cartasData from '../data/cartas.json'; // use o cartas_final_para_jogo.json no lugar
+import cartasData from '../data/cartas.json'; // cartas
 
 const screenWidth = Dimensions.get('window').width;
 
