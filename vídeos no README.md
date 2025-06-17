@@ -35,13 +35,7 @@ Aplicativo mobile desenvolvido com React Native, inspirado no jogo Balatro, com 
   - Persistência local com AsyncStorage
 
 - **Tela de Regras**
-  - Explicações didáticas sobre como jogar e calcular a pontuação
-
-- **Notificações Internas**
-  - Geração de notificações para eventos como:
-    - Produto favoritado
-    - Atualização de dados de perfil
-    - Adição de novo produto
+  - Explicações objetivas sobre como jogar e como funciona a pontuação
 
 ## Tecnologias Utilizadas
 
@@ -49,9 +43,9 @@ Aplicativo mobile desenvolvido com React Native, inspirado no jogo Balatro, com 
 - **React Native + Expo**
 - `React Navigation` – gerenciamento de rotas e telas
 - `React Native Paper` – UI moderna e responsiva
-- React Native Safe Area View – compatibilidade com bordas e status bar
+- `React Native Safe Area View` – compatibilidade com bordas e status bar
 - `AsyncStorage` – persistência local de dados do ranking
-- JSON local – base de cartas utilizada como mock de API
+- **JSON local** – base de cartas utilizada como mock de API
 
 ## Como Rodar o Projeto
 
@@ -84,5 +78,5 @@ Use o aplicativo **Expo Go** para testar no celular via QR Code.
 - O projeto simula backend e API por meio de arquivos JSON locais, conforme permitido no enunciado.
 
 ## Vídeos para Demonstração
-- [Vídeo do App (com narração)]()
-- [Vídeo do VSCode]()
+- [Vídeo do App (com narração)](https://drive.google.com/file/d/13g2hwgBSyoIbMF7HZ6-u3Y-qQtEAZjiy/view?usp=sharing)
+- [Vídeo do VSCode](https://drive.google.com/file/d/1KCfgCuSwGiP8Ryv7zvtZPXK6PqzFXN_7/view?usp=sharing)
