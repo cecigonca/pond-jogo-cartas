@@ -9,12 +9,7 @@ export default function RulesScreen() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
-      <ScrollView
-        contentContainerStyle={{
-          flexGrow: 1,
-          padding: 24,
-        }}
-      >
+      <ScrollView contentContainerStyle={{ flexGrow: 1, padding: 24 }}>
         <Text
           variant="headlineMedium"
           style={{
@@ -24,54 +19,39 @@ export default function RulesScreen() {
             fontWeight: 'bold',
           }}
         >
-          Regras do Jogo
+          Como Funciona o Jogo
         </Text>
 
-        <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🎯 Objetivo
-        </Text>
+        {/* OBJETIVO */}
         <Text style={{ marginBottom: 16 }}>
-          Construir a melhor mão possível em 10 rodadas, escolhendo cartas que maximizem sua pontuação final.
+        Seu objetivo é montar a melhor mão possível em 10 rodadas, escolhendo cartas com efeitos que aumentem sua pontuação.
         </Text>
 
-        <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🕹️ Como Jogar
-        </Text>
+        {/* COMO JOGAR */}
+        <Text style={{ marginBottom: 8, fontWeight: 'bold' }}>🕹️ Regras rápidas:</Text>
         <Text style={{ marginBottom: 16 }}>
-          • O jogo tem 10 rodadas.{"\n"}
-          • Em cada rodada, 3 cartas diferentes aparecem na tela.{"\n"}
-          • Você deve virar e escolher apenas 1 carta por rodada.{"\n"}
-          • As cartas escolhidas vão para a sua mão e afetam sua pontuação.
+          • São 10 rodadas.{"\n"}
+          • Em cada uma, aparecem 3 cartas.{"\n"}
+          • Toque para virar uma carta.{"\n"}
+          • A carta escolhida vai para sua mão.{"\n"}
+          • No fim, sua pontuação será calculada.{"\n"}
         </Text>
 
-        <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          ✨ Tipos de Efeitos nas Cartas
-        </Text>
+        {/* EFEITOS */}
+        <Text style={{ marginBottom: 8, fontWeight: 'bold' }}>✨ Efeitos das Cartas:</Text>
         <Text style={{ marginBottom: 16 }}>
-          As cartas podem ter efeitos diferentes que influenciam o jogo:
-          {"\n\n"}• <Text style={{ fontWeight: 'bold' }}>Pontos positivos:</Text> somam direto à pontuação final.
-          {"\n"}• <Text style={{ fontWeight: 'bold' }}>Pontos negativos:</Text> subtraem da pontuação.
-          {"\n"}• <Text style={{ fontWeight: 'bold' }}>x2 total:</Text> dobra o total ao final.
-          {"\n"}• <Text style={{ fontWeight: 'bold' }}>Bônus por trio de cor:</Text> se você tiver 3 ou mais cartas da mesma cor, recebe +3 pontos extras.
-        </Text>
+          • <Text style={{ fontWeight: 'bold' }}>Cartas Cor:</Text> +1 ponto no total{"\n"}
+          • <Text style={{ fontWeight: 'bold' }}>Carta Sorte:</Text> +2 pontos no total{"\n"}
+          • <Text style={{ fontWeight: 'bold' }}>Carta Azar:</Text> -2 pontos no total{"\n"}
+          • <Text style={{ fontWeight: 'bold' }}>Carta Nula:</Text> não mexe na pontuação{"\n"}
+          • <Text style={{ fontWeight: 'bold' }}>Carta Especial:</Text> dobra a pontuação final{"\n"}
+          • <Text style={{ fontWeight: 'bold' }}>Trio de cor:</Text> se tiver 3 cartas da mesma cor, ganha +3 pontos no total{"\n"}
+          </Text>
 
-        <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🧮 Cálculo da Pontuação
-        </Text>
-        <Text style={{ marginBottom: 16 }}>
-          A pontuação é calculada somando:
-          {"\n"}• Os pontos das cartas escolhidas (positivos ou negativos).
-          {"\n"}• Os bônus por efeitos ativos (ex: trio de cor).{"\n"}
-          • Multiplicadores aplicados no final (ex: x2).
-        </Text>
-
-        <Text variant="titleMedium" style={{ marginBottom: 8, fontWeight: 'bold' }}>
-          🏁 Fim de Jogo e Ranking
-        </Text>
+        {/* RANKING */}
+        <Text style={{ marginBottom: 8, fontWeight: 'bold' }}>🏆 Ranking:</Text>
         <Text style={{ marginBottom: 32 }}>
-          Após a 10ª rodada, sua pontuação final será exibida.{"\n"}
-          Se estiver entre os 5 melhores, você entra no ranking com seu nome e posição.{"\n"}
-          Você pode visualizar o ranking a qualquer momento na tela inicial.
+          Se ficar entre os 5 melhores, seu nome entra no ranking. Você pode ver o ranking atual na tela inicial.
         </Text>
 
         <Button
